@@ -1,6 +1,6 @@
 # Nombre del Proyecto
 
-HR MANAGER
+HR MANAGER.
 
 # Versión
 
