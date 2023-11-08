@@ -14,7 +14,7 @@ Simular entorno visual de un modulo de recursos humanos de una empresa
 Cargar datos a legajos y llevar registro de capacitaciones y de proyectos donde trabajo la persona (serian 3 tablas y el comun de cada tabla seria el nro de legajo).
 Consultar legajos de cada empleado y demas registros.
 Dar alta a usuarios.
-El admin puede consultar todos los datos con una busqueda. Dar de alta, modificar y dar de baja.
+
 
 
 - PAGINAS
