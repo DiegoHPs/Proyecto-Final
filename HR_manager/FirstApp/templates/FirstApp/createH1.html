@@ -1,0 +1,27 @@
+{% extends 'FirstApp/home.html' %}
+
+{% block content %}
+
+<h1>crea legajo base</h1>
+
+<form  method="POST">
+
+    {% csrf_token %}
+
+    {{form}}
+
+    <button>
+        guardar
+    </button>
+
+
+</form>
+<br>
+<br>
+<a class="btn btn-lg btn-light" href="{% url 'nuevo_registro_hoja2' %}">agregar datos complementarios</a>
+<br>
+<br>
+<a class="btn btn-lg btn-light" href="{% url 'nuevo_registro_capacitacion' %}">agregar capacitaciones</a>
+<br>
+<br>
+{% endblock %}

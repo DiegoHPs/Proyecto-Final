@@ -1,0 +1,18 @@
+{% extends 'FirstApp/home.html' %}
+
+{% block content %}
+<h1>Datos basicos</h1>
+<p>Click en el legajo para actualizar datos</p>
+{% for lee1 in leeH1 %}
+<a href="{% url 'CheckData' lee1.id %}">
+<li>{{lee1}}</li>
+</a>
+{% endfor %}
+
+<br>
+<br>
+<a class="btn btn-lg btn-light" href="{% url 'ver_tablas' %}">ver datos complementarios</a>
+<br>
+<br>
+
+{% endblock %}

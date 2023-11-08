@@ -1,0 +1,20 @@
+{% extends 'FirstApp/home.html' %}
+
+{% block content %}
+<br>
+<br>
+<form method="POST" action="{% url 'borrarBase' %}">
+    {% csrf_token %}
+    <label for="dni">Ingrese el DNI a borrar:</label>
+    <input type="text" name="dni" id="dni">
+    <button type="submit">Eliminar</button>
+</form>
+
+{% for leg in legajo %}
+    <li>{{ leg }}</li>
+{% endfor %}
+
+<br>
+
+
+{% endblock %}

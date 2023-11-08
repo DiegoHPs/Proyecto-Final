@@ -1,0 +1,21 @@
+{% extends 'FirstApp/home.html' %}
+
+{% block content %}
+
+<h1>Libro de Reclamos</h1>
+    <ul>
+        {% for mensaje in mensajes %}
+            <li>{{ mensaje.contenido }} ({{ mensaje.fecha_creacion }})</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Dejar un mensaje</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Enviar</button>
+    </form>
+
+
+
+{% endblock %}

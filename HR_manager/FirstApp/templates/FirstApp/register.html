@@ -1,0 +1,22 @@
+{% extends 'FirstApp/home.html' %}
+
+{% block content %}
+
+<p>Registro de nuevo usuario</p>
+
+{{error}}
+
+<form method="POST">   
+
+{% csrf_token %}
+	
+{{form.as_p}}
+
+<button>
+	register 
+</button>
+
+</form>
+
+
+{% endblock %}

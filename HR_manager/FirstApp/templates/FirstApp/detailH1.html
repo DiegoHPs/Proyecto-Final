@@ -1,0 +1,20 @@
+{% extends 'FirstApp/home.html' %}
+
+{% block content %}
+
+<h1>Actualizar Datos</h1>
+
+
+<form method="POST">
+	{% csrf_token %}
+
+	{{form.as_p}}
+
+	<button>
+	send
+    </button>
+
+</form>
+
+
+{% endblock %}

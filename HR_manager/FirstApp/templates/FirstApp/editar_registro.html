@@ -1,0 +1,17 @@
+{% extends 'FirstApp/home.html' %}
+
+{% block content %}
+
+<br>
+<br>
+<h1>Editar Registro</h1>
+    <form method='POST'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Guardar cambios">
+    </form>
+    <a href="{% url 'ver_tablas' %}">Volver a la lista de tablas</a>
+<br>
+<br>
+
+{% endblock %}

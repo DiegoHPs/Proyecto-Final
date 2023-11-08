@@ -1,0 +1,30 @@
+{% extends 'FirstApp/home.html' %}
+
+{% block content %}
+
+<br>
+<br>
+<h1>Legajo ampliado</h1>
+    <ul>
+        {% for registro in hoja2_registros %}
+            <li>
+                {{ registro }} 
+                <a href="{% url 'editar_registro' registro.id %}">Editar</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h1>Capacitaciones</h1>
+    <ul>
+        {% for registro in capacitacion_registros %}
+            <li>
+                {{ registro }} 
+                <a href="{% url 'editar_registro' registro.id %}">Editar</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+
+<br>
+<br>
+{% endblock %}

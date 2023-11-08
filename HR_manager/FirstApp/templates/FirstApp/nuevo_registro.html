@@ -1,0 +1,19 @@
+{% extends 'FirstApp/home.html' %}
+
+{% block content %}
+<br>
+<br>
+
+
+<h1>Nuevo Registro</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Guardar nuevo registro">
+    </form>
+    <a href="{% url 'ver_tablas' %}">Volver a la lista de tablas</a>
+
+
+<br>
+<br>
+{% endblock %}
